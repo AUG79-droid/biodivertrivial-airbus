@@ -363,4 +363,63 @@ const QUESTIONS = [
   },
 ];
 
+const QUESTION_IMAGE_ALTS = [
+  '',
+  'Bosque templado, pradera y estanque formando un paisaje natural variado.',
+  'Lagarto de una isla mediterránea entre rocas y vegetación costera.',
+  'Manada de ciervos salvajes atravesando una pradera de montaña.',
+  'Planta con flores desconocida junto a una zona europea de transporte.',
+  'Castor europeo descansando junto a un río al amanecer.',
+  'Líquenes sobre la corteza de un árbol maduro con una observadora al fondo.',
+  'Ave, polilla y murciélago distante en el borde de un bosque al anochecer.',
+  'Edificio industrial iluminado junto a vegetación oscura durante la noche.',
+  'Varias especies silvestres compartiendo una pradera al amanecer.',
+  'Carrizal y pradera en primavera con maquinaria inactiva a lo lejos.',
+  'Cuenca fluvial que conecta bosque, cultivos y una pequeña población.',
+  'Humedal saludable con agua abierta, carrizos y aves acuáticas distantes.',
+  'Manchas de bosque conectadas por un seto y un arroyo entre cultivos.',
+  'Suelo forestal oscuro con hojarasca, raíces finas y una lombriz.',
+  'Paisaje forestal dividido por una carretera.',
+  'Pradera intacta junto a una instalación industrial distante.',
+  'Instalación industrial dentro de una amplia cuenca fluvial y campos agrícolas.',
+  'Nave de fabricación aeronáutica abierta hacia el paisaje circundante.',
+  'Arroyo con vegetación integrado junto a edificios empresariales modernos.',
+  'Bosque costero maduro bajo un tiempo cambiante.',
+  'Equipo de proyecto reunido alrededor de una maqueta sin marcas.',
+  'Límite de una obra tranquila junto al borde de un bosque intacto.',
+  'Perímetro aeronáutico seguro e iluminado junto a vegetación oscura.',
+  'Obra de restauración de una ribera degradada con maquinaria inactiva.',
+  'Obra de infraestructura con una nueva zona de hábitat en la distancia.',
+  'Estanque joven y poco profundo con otro más antiguo al fondo.',
+  'Planta con flores desconocida observada en una instalación industrial.',
+  'Equipo de campo recorriendo una pradera restaurada durante una visita.',
+  'Mezcla natural de hierbas y flores silvestres en una pradera restaurada.',
+  'Motor de aeronave retirado sobre un banco limpio de mantenimiento.',
+  'Estanque forestal tranquilo rodeado de vegetación madura.',
+  'Especialista ambiental en campo con tableta y maletín de sensores cerrado.',
+  'Filas de árboles jóvenes recién plantados en un campo abierto.',
+  'Ponente corporativo hablando junto a una pantalla vacía.',
+  'Ecóloga de campo observando un paisaje parcialmente cubierto por la niebla.',
+  'Especialista ambiental en terreno remoto bajo una pequeña aeronave de observación.',
+  'Pradera natural y arroyo junto a una instalación industrial aeronáutica.',
+  'Pequeño equipo visitando un hábitat natural restaurado recientemente.',
+  'Estación compacta de sensores ambientales junto a un estanque tranquilo.',
+  'Equipo de gestión ambiental reunido junto a una pizarra sin marcas.',
+  'A400M en un hangar de mantenimiento con un desagüe y una pequeña mancha.',
+  'Eurofighter junto a una pradera de aeródromo en primavera con aves distantes.',
+  'Instalación aeronáutica con un solar desarrollado vacío y un campo natural.',
+  'Pista de aeródromo, aves distantes y vehículo de gestión de fauna estacionado.',
+  'Cajas de transporte de madera dentro de un almacén logístico aeronáutico.',
+  'Pradera de un campus industrial con distintas alturas y una segadora parada.',
+  'Analista observando una imagen satelital del paisaje en una sala de operaciones.',
+  'Muestras de minerales críticos junto a un módulo electrónico aeronáutico.',
+  'Componente de aviónica retirado sobre un banco de mantenimiento de retrofit.',
+  'Equipo de mantenimiento aeronáutico reunido después de un incidente.',
+];
+
+QUESTIONS.forEach((question) => {
+  question.image = `./assets/questions/q${String(question.id).padStart(2, '0')}.webp`;
+  question.imageAlt = QUESTION_IMAGE_ALTS[question.id];
+});
+
 window.KNOWLEDGE_CHECK = { DOMAINS, QUESTIONS };
